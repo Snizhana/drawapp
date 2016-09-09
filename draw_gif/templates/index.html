@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="canvas-wrapper slider" id="canvasWrapper">
+  <canvas id="layer1"></canvas>
+</div>
+<span class="direction left">
+  <a href="#">
+      <i class="fa fa-chevron-left" aria-hidden="true"></i>
+  </a>
+</span>
+<span class="direction right">
+  <a href="#">
+    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+  </a>
+</span>
+<span class="menu-icon">
+  <a href="#" id="btnOpen"><i class="fa fa-bars" aria-hidden="true"></i></a>
+</span>
+<div class="sidebar" id="sidebar">
+  <div class="toolbar">
+    <a href="#" class="btn-close" id="btnClose"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <div class="color-scheme" id="palette">
+      <span class="color tomato" data-color="tomato"></span>
+      <span class="color saddlebrown" data-color="saddlebrown"></span>
+      <span class="color orange" data-color="orange"></span>
+      <span class="color royalblue" data-color="royalblue"></span>
+      <span class="color slategrey" data-color="slategrey"></span>
+      <span class="color yellow" data-color="yellow"></span>
+      <span class="color mediumpurple" data-color="mediumpurple"></span>
+      <span class="color seagreen" data-color="seagreen"></span>
+      <span class="color black" data-color="black"></span>
+      <span class="color skyblue" data-color="skyblue"></span>
+      <span class="color wheat" data-color="wheat"></span>
+      <span class="color lightgreen" data-color="lightgreen"></span>
+      <span class="color crimson" data-color="crimson"></span>
+      <span class="color gold" data-color="gold"></span>
+      <span class="color indigo" data-color="indigo"></span>
+      <span class="color darkslategrey" data-color="darkslategrey"></span>
+    </div>
+    <div class="size-menu">
+      <span>Pen Size:</span>
+      <input type="range" value="5" min="1" max="35">
+    </div>
+    <input type="button" class="btn btn-new" value="New" />
+    <input type="button" class="btn btn-clear" value="Clear" />
+    <input type="button" class="btn btn-eraser" value="Eraser" />
+  </div>
+</div>
+{% endblock content %}

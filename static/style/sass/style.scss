@@ -1,0 +1,130 @@
+@import "mixings";
+
+$colors:(
+  tomato,
+  saddlebrown,
+  orange,
+  slategrey,
+  yellow,
+  mediumpurple,
+  seagreen,
+  royalblue,
+  black,
+  skyblue,
+  wheat,
+  lightgreen,
+  crimson,
+  gold,
+  indigo,
+  darkslategrey
+  );
+
+body{
+  margin: 0;
+  overflow-x: hidden;
+  .main-container{
+    .canvas-wrapper{
+      canvas{
+        background-color: #c3d7df;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0
+      }
+      canvas:not(:first-child){
+        display: none;
+      }
+    }
+    .direction{
+      display: none;
+      color: #f5f5f5;
+      font-size: 60px;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      a{ color: inherit; }
+    }
+    .left{
+      left: 52px;
+    }
+    .right{
+      right: 0px;
+    }
+    .menu-icon{
+      &:before{
+        background-color: #f5f5f5;
+        border-radius: 50%;
+        content: '';
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        z-index: -1;
+        top: -22px;
+        right: -25px;
+      };
+    }
+    .menu-icon, .btn-close{
+      font-size: 30px;
+      position: fixed;
+      right: 50px;
+      top: 50px;
+      a{
+        color: inherit;
+      }
+    }
+    .sidebar{
+      background-color: #f5f5f5;
+      height: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      overflow-x: hidden;
+      transition: 0.5s;
+      width: 0;
+      .toolbar{
+        margin: auto;
+        width: 268px;
+        .btn-close{
+          color: inherit;
+          display: none;
+          font-size: 30px;
+          right: 20px;
+          top:20px;
+        }
+        .color-scheme{
+          margin: 60px 0 30px 0;
+          .color{
+            display: inline-block;
+            cursor: pointer;
+            height: 30px;
+            width: 30px;
+          }
+          @each $item in $colors{
+            .#{$item}{
+              background-color: $item;
+            }
+          }
+        }
+        .size-menu{
+          input[type=range]{
+
+          }
+        }
+        .btn{
+          background: #3b5998;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          margin: 30px 0;
+          padding: 8px 30px;
+        }
+        .btn-new{
+          display: none;
+        }
+      }
+    }
+  }
+
+}

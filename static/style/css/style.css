@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+body .main-container .canvas-wrapper canvas {
+  background-color: #c3d7df;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+body .main-container .canvas-wrapper canvas:not(:first-child) {
+  display: none;
+}
+body .main-container .direction {
+  display: none;
+  color: #f5f5f5;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+body .main-container .direction a {
+  color: inherit;
+}
+body .main-container .left {
+  left: 52px;
+}
+body .main-container .right {
+  right: 0px;
+}
+body .main-container .menu-icon:before {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  content: '';
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  z-index: -1;
+  top: -22px;
+  right: -25px;
+}
+body .main-container .menu-icon, body .main-container .btn-close {
+  font-size: 30px;
+  position: fixed;
+  right: 50px;
+  top: 50px;
+}
+body .main-container .menu-icon a, body .main-container .btn-close a {
+  color: inherit;
+}
+body .main-container .sidebar {
+  background-color: #f5f5f5;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 0;
+}
+body .main-container .sidebar .toolbar {
+  margin: auto;
+  width: 268px;
+}
+body .main-container .sidebar .toolbar .btn-close {
+  color: inherit;
+  display: none;
+  font-size: 30px;
+  right: 20px;
+  top: 20px;
+}
+body .main-container .sidebar .toolbar .color-scheme {
+  margin: 60px 0 30px 0;
+}
+body .main-container .sidebar .toolbar .color-scheme .color {
+  display: inline-block;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+body .main-container .sidebar .toolbar .color-scheme .tomato {
+  background-color: tomato;
+}
+body .main-container .sidebar .toolbar .color-scheme .saddlebrown {
+  background-color: saddlebrown;
+}
+body .main-container .sidebar .toolbar .color-scheme .orange {
+  background-color: orange;
+}
+body .main-container .sidebar .toolbar .color-scheme .slategrey {
+  background-color: slategrey;
+}
+body .main-container .sidebar .toolbar .color-scheme .yellow {
+  background-color: yellow;
+}
+body .main-container .sidebar .toolbar .color-scheme .mediumpurple {
+  background-color: mediumpurple;
+}
+body .main-container .sidebar .toolbar .color-scheme .seagreen {
+  background-color: seagreen;
+}
+body .main-container .sidebar .toolbar .color-scheme .royalblue {
+  background-color: royalblue;
+}
+body .main-container .sidebar .toolbar .color-scheme .black {
+  background-color: black;
+}
+body .main-container .sidebar .toolbar .color-scheme .skyblue {
+  background-color: skyblue;
+}
+body .main-container .sidebar .toolbar .color-scheme .wheat {
+  background-color: wheat;
+}
+body .main-container .sidebar .toolbar .color-scheme .lightgreen {
+  background-color: lightgreen;
+}
+body .main-container .sidebar .toolbar .color-scheme .crimson {
+  background-color: crimson;
+}
+body .main-container .sidebar .toolbar .color-scheme .gold {
+  background-color: gold;
+}
+body .main-container .sidebar .toolbar .color-scheme .indigo {
+  background-color: indigo;
+}
+body .main-container .sidebar .toolbar .color-scheme .darkslategrey {
+  background-color: darkslategrey;
+}
+body .main-container .sidebar .toolbar .btn {
+  background: #3b5998;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 30px 0;
+  padding: 8px 30px;
+}
+body .main-container .sidebar .toolbar .btn-new {
+  display: none;
+}
